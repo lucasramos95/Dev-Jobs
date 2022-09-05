@@ -1,0 +1,14 @@
+.listadejobs {
+    background-color: white;
+    padding: 30px 0;
+    margin: 130px 130px;
+}
+
+.listadejobs img {
+    width: 5%;
+    left: 10em;
+}
+
+.listadejobs li {
+    list-style: none;
+}

@@ -1,14 +1,8 @@
 .listadejobs {
     background-color: white;
-    padding: 30px 0;
-    margin: 130px 130px;
-}
-
-.listadejobs img {
-    width: 5%;
-    left: 10em;
-}
-
-.listadejobs li {
-    list-style: none;
+    padding: 2em 3em;
+    margin: 4em 8em;
+    box-shadow: 8px 8px 16px rgba(0, 0 ,0, 0.08);
+    display: flex;
+    max-width: 80%;
 }

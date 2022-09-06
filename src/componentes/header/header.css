@@ -1,5 +1,4 @@
 .header {
-    max-width: 100%;
-    text-align: center;
+    width: 100%;
     background-color: rgba(41, 132, 144, 0.989);
 }

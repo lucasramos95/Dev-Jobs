@@ -9,14 +9,24 @@ const Main = (props) => {
                     <p>Photosnap</p>
                     <h1>Desenvolvedor Senior Front-end</h1>
                     <p>1 Dia atrás - Tempo Integral - Remoto</p>
-                </div>
+                    <div className='stack'>Front-end</div>
+                    <div className='stack'>Senior</div>
+                    <div className='stack'>HTML</div>
+                    <div className='stack'>CSS</div>
+                    <div className='stack'>JavaScript</div> 
+                </div>      
             </div>
+            
+
             <div className='listadejobs'>
                 <div>
                     <img src='/imagens/manage.svg' />
                     <p>Manage</p>
                     <h1>Desenvolvedor Fullstack</h1>
                     <p>1 Dia atrás - Meio Turno - Remoto</p>
+                    <div className='stack'>Fullstack</div>
+                    <div className='stack'>React</div>
+                    <div className='stack'>Python</div> 
                 </div>
             </div>
             <div className='listadejobs'>
@@ -25,6 +35,11 @@ const Main = (props) => {
                     <p>Account</p>
                     <h1>Desenvolvedor Front-end Junior</h1>
                     <p>2 Dias atrás - Tempo Integral - Presencial</p>
+                    <div className='stack'>Frontend</div>
+                    <div className='stack'>Junior</div>
+                    <div className='stack'>JavaScript</div>
+                    <div className='stack'>React</div>
+                    <div className='stack'>Sass</div>  
                 </div>
             </div>
             <div className='listadejobs'>
@@ -33,6 +48,10 @@ const Main = (props) => {
                     <p>MyHome</p>
                     <h1>Desenvolvedor Front-end Junior</h1>
                     <p>5 Dias atrás - Tempo Integral - Internacional/EUA</p>
+                    <div className='stack'>Frontend</div>
+                    <div className='stack'>Junior</div>
+                    <div className='stack'>CSS</div>
+                    <div className='stack'>JavaScript</div> 
                 </div>
             </div>
             <div className='listadejobs'>
@@ -41,6 +60,10 @@ const Main = (props) => {
                     <p>Loop Studios</p>
                     <h1>Engenheiro de Software</h1>
                     <p>5 Dias atrás - Tempo Integral - Internacional/Canadá</p>
+                    <div className='stack'>Fullstack</div>
+                    <div className='stack'>JavaScript</div>
+                    <div className='stack'>Ruby</div>
+                    <div className='stack'>Sass</div> 
                 </div>
             </div>
             <div className='listadejobs'>
@@ -49,6 +72,9 @@ const Main = (props) => {
                     <p>FaceIt</p>
                     <h1>Desenvolvedor Back-end Junior</h1>
                     <p>7 Dias atrás - Tempo Integral - Internacional/Remoto</p>
+                    <div className='stack'>Back-end</div>
+                    <div className='stack'>Junior</div>
+                    <div className='stack'>RoR</div> 
                 </div>
             </div>
             <div className='listadejobs'>
@@ -57,6 +83,11 @@ const Main = (props) => {
                     <p>Shortly</p>
                     <h1>Desenvolvedor Junior</h1>
                     <p>14 Dias atrás - Tempo Integral - Remoto</p>
+                    <div className='stack'>Front-end</div>
+                    <div className='stack'>Junior</div>
+                    <div className='stack'>JavaScript</div>
+                    <div className='stack'>HTML</div>
+                    <div className='stack'>Sass</div> 
                 </div>
             </div>
             <div className='listadejobs'>
@@ -65,6 +96,11 @@ const Main = (props) => {
                     <p>Insure</p>
                     <h1>Desenvolvedor Junior</h1>
                     <p>14 Dias atrás - Tempo Integral - Remoto</p>
+                    <div className='stack'>Front-end</div>
+                    <div className='stack'>Junior</div>
+                    <div className='stack'>JavaScript</div>
+                    <div className='stack'>Vue</div>
+                    <div className='stack'>Sass</div> 
                 </div>
             </div>
             <div className='listadejobs'>
@@ -73,6 +109,10 @@ const Main = (props) => {
                     <p>Eyecam Co.</p>
                     <h1>Desenvolver Fullstack</h1>
                     <p>17 Dias atrás - Tempo Integral - Internacional/Remoto</p>
+                    <div className='stack'>Fullstack</div>
+                    <div className='stack'>JavaScript</div>
+                    <div className='stack'>Python</div>
+                    <div className='stack'>Django</div> 
                 </div>
             </div>
             <div className='listadejobs'>
@@ -81,6 +121,11 @@ const Main = (props) => {
                     <p>The Air Filter Company</p>
                     <h1>Desenvolver Front-end</h1>
                     <p>1 Mês atrás - Meio Turno - Internacional/Remoto</p>
+                    <div className='stack'>Front-end</div>
+                    <div className='stack'>Junior</div>
+                    <div className='stack'>JavaScript</div>
+                    <div className='stack'>React</div>
+                    <div className='stack'>Sass</div> 
                 </div>
             </div>
         </>

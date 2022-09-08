@@ -6,3 +6,19 @@
     display: flex;
     max-width: 80%;
 }
+
+.stack {
+    background-color: rgb(229, 250, 237);
+    font-weight: bold;
+    color: rgba(41, 132, 144, 0.989);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px;
+    margin: 1em;
+    display: inline-flex;
+}
+
+.stack:hover {
+    background-color: rgba(41, 132, 144, 0.989);
+    color: white;
+}

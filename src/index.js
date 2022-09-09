@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './media-queries.css';
 import './filter-panel.css';
 import App from './App';
 

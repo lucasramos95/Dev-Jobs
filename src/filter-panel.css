@@ -54,7 +54,6 @@
 .clear-filters:hover, .clear-filters:focus {
     color: var(--dark-cyan);
     font-weight: 700;
-    text-decoration: underline;
 }
 
 .filter-applied {

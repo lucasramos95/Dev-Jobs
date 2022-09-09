@@ -12,8 +12,8 @@ const ItemResult = ({ data, addedFilters }) => {
                         <div className="job-info">
                             <div className="company">
                                 <span className="company-title">{ job.company }</span>
-                                { job.new && <span className="company-new flags">new!</span> }
-                                { job.featured && <span className="company-featured flags">featured</span> }
+                                { job.new && <span className="company-new flags">novo!</span> }
+                                { job.featured && <span className="company-featured flags">destaque</span> }
                             </div>
                             <h3 className="position">{ job.position }</h3>
                             <div className="additional-info">

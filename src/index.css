@@ -1,14 +1,247 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(229, 250, 237);
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+/* ------------------ Table of Contents ----------------- 
+1. Main Containers
+2. Green header
+3. Results
+4. Results item
+5. Job description
+6. Filters (on job offer)
+7. Footer
+--------------------------------------------------------- */
+
+:root {
+  /* ------------ Fonts ------------ */
+  --font-family: 'Spartan', sans-serif;
+
+  /* ----------- Colors ------------ */
+  --dark-cyan: hsl(180, 29%, 50%);
+  --background: hsl(180, 52%, 96%);
+  --filter-tablets: hsl(180, 31%, 95%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayhish-cyan: hsl(180, 14%, 20%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: var(--font-family);
+    font-size: 15px;
+    position: relative;
+}
+
+/* ------------------------------------- 1. MAIN CONTAINERS ---------------------------------- */
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.App {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1fr);
+    -ms-grid-rows: 150px 1fr 15px;
+        grid-template-rows: 150px 1fr 15px;
+    -ms-grid-row-align: center;
+        align-items: center;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    background: var(--background);
+}
+
+/* ------------------------------------ 2. GREEN HEADER --------------------------------------- */
+.green-header {
+    width: 100%;
+    height: 100%;
+    background: var(--dark-cyan);
+    position: relative;
+    overflow: hidden;
+}
+
+.green-header:before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='375' height='156' viewBox='0 0 375 156'%3E%3Cpath fill='%2363BABA' fill-rule='evenodd' d='M-86.732 487.429c-51.432-51.425-51.438-134.806-.013-186.237l.013-.013L309.926-95.424c51.441-51.434 134.836-51.434 186.277 0C547.634-44 547.64 39.38 496.216 90.813c-.005.004-.01.008-.013.013L99.543 487.429c-51.44 51.433-134.834 51.433-186.275 0zm-444.692 71.824c-51.432-51.424-51.438-134.806-.013-186.237l.013-.013L-134.766-23.6C-83.325-75.034.07-75.034 51.511-23.6c51.431 51.424 51.437 134.805.013 186.237l-.013.013-396.66 396.603c-51.44 51.433-134.834 51.433-186.275 0z'/%3E%3C/svg%3E");
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+}
+
+/* --------------------------------------- 3. RESULTS ---------------------------------------- */
+.results {
+    height: 100%;
+    width: 100%;
+    padding: 1.5em;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ------------------------------------- 4. RESULTS ITEM ------------------------------------- */
+.results-item {
+    width: 100%;
+    height: auto;
+}
+
+.job {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding: 4em 2em 1em 2em;
+    margin: 3em 0;
+    box-shadow: 3px 3px 20px rgba(91, 164, 164, 0.2);
+    position: relative;
+}
+
+.job:nth-child(1):before, .job:nth-child(2):before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--dark-cyan);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+/* ------------------ 5. TITLES, BUTTONS, SMALL ELEMENTS / JOB DESCRIPTION -------------------- */
+.logo {
+    width: 20%;
+    height: auto;
+    max-width: 88px;
+    max-height: 88px;
+    margin: -6em 0 0 0;
+}
+
+.job-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 1em 0;
+}
+
+.company {
+    margin: 1em 0;
+}
+
+.company-title {
+    color: var(--dark-cyan);
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.flags {
+    padding: .4em .5em .3em .5em;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: .8em;
+}
+
+.company-new {
+    background: var(--dark-cyan);
+    margin: 0 1em 0 1.5em;
+}
+
+.company-featured {
+    background: var(--very-dark-grayhish-cyan);
+}
+
+.position {
+    font-weight: 700;
+    color: var(--very-dark-grayhish-cyan);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.position:hover {
+    color: var(--dark-cyan);
+}
+
+.additional-info {
+    margin: 1em 0 0 0;
+    padding: 0 0 1em 0;
+    border-bottom: 1px solid var(--dark-grayish-cyan);
+}
+
+.additional-info span {
+    font-size: .9em;
+    color: var(--dark-grayish-cyan);
+    position: relative;
+}
+
+.additional-info span:not(:first-child) {
+    margin: 0 0 0 2em;
+}
+
+.additional-info span:not(:first-child):before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--dark-grayish-cyan);
+    top: 40%;
+    left: -1em;
+}
+
+/* ---------------------------------- 6. FILTERS (on job offer) -------------------------------- */
+.filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.button-filter {
+    color: var(--dark-cyan);
+    font-size: .9em;
+    font-weight: 700;
+    font-family: var(--font-family);
+    background: var(--filter-tablets);
+    border: none;
+    border-radius: 5px;
+    padding: .6em;
+    margin: 0 1em 1em 0;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
+}
+
+.button-filter:hover {
+    color: var(--filter-tablets);
+    background: var(--dark-cyan);
+}
+ /* --------------------------------------- FOOTER --------------------------------------- */
+.attribution {
+    font-size: .8em;
+    color: var(--very-dark-grayhish-cyan);
+}
+
+.attribution a {
+    color: var(--dark-cyan);
 }

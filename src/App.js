@@ -1,16 +1,12 @@
-import React from 'react';
-import './App.css';
-import './index.css';
-import Header from './componentes/header';
-import Main from './componentes/main';
+import Results from './Results';
 
 function App() {
   return (
-      <>
-        <Header />
-        <Main />
-      </>
-  )
+    <div className="App">
+      <div className="green-header"></div>
+      <Results />
+    </div>
+  );
 }
 
 export default App;

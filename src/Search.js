@@ -17,7 +17,7 @@ const Search = ({ filters, removeOneFilter, clearAllFilters }) => {
                 }) }
             </section>
             <div className="clear-filters"
-                onClick={ () => clearAllFilters() }>Clear</div>
+                onClick={ () => clearAllFilters() }>Limpar</div>
         </div>
     );
 }
